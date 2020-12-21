@@ -13,6 +13,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Tailwind Library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <!-- CSS doc -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="text-gray-800 antialiased">
 
@@ -32,18 +34,18 @@
               </button>
           </div>
         <!-- Nav Right Side -->
-        <ul class="flex  flex-col lg:flex-row list-none lg:ml-auto " id="example-collapse-navbar" >
-          <!-- Social Media Button -->
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto nave nave1" id="example-collapse-navbar" >
+          <!--FACEBOOK Social Media Button -->
           <li class="flex items-center">
             <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
               href="#pablo">
               <!-- Icon -->
-              <i class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "></i>
+              <i class=" lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "></i>
               <span class="lg:hidden inline-block ml-2">Share</span>
             </a>
           </li>
-          <!-- Social Media Button -->
-          <li class="flex items-center">
+          <!--TWITTER Social Media Button -->
+          <li class="flex items-center ">
             <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
               href="#pablo">
               <!-- Icon -->
@@ -51,7 +53,7 @@
               <span class="lg:hidden inline-block ml-2">Tweet</span>
             </a>
           </li>
-          <!-- Social Media Button -->
+          <!--INSTAGRAM Social Media Button -->
           <li class="flex items-center">
             <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
               href="#pablo">
@@ -755,8 +757,9 @@
 <!-- Navigation Script -->
 <script>
   function toggleNavbar(collapseID) {
-    document.getElementById(collapseID).classList.toggle("hidden");
     document.getElementById(collapseID).classList.toggle("block");
+    document.getElementById(collapseID).classList.toggle("hidden");
+    document.getElementById(collapseID).classList.remove("nave");
   }
 </script>
 </html>

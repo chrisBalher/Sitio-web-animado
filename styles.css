@@ -1,0 +1,12 @@
+@media (max-width:1024px){
+    .nave{
+        display: none;
+    }
+    .nave1{
+        position: absolute;
+        top: 45px;
+        right: 5%;
+        background-color: rgb(255, 255, 255, 0.9);
+        border-radius: 5px;
+    }
+}
